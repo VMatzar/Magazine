@@ -1,0 +1,31 @@
+main{
+    background: url('https://i.imgur.com/TnNG1IG.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main--cards { 
+    min-width: 700px; /*Pixelaje min en celulares*/
+    max-width: 900px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin:200px auto 5px auto;
+}
+.main--cards .card{
+    max-width: 250px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main--cards .card:not(.last){
+    border-right: 3px solid #192C41;
+}
+.main--cards .card h4{
+    color:black;
+}
+.main--cards .card h5{
+    color:black;
+}
+.main--cards .card h5{
+    padding-left: 0;
+}

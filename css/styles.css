@@ -1,0 +1,140 @@
+:root {
+    /*Colores*/
+    --bitcoin-orage:#F7931A;
+    --blue-soft:#6EB2DE;
+    --blue:#009FF5;
+    --white:#F1FBFF;
+    --gray:#E6F4F1;
+    --gray-dark:#9CAEBC;
+    --black:#272929;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poiret One', cursive;
+}
+header{
+    background-color: var(--white);
+    height:130px;
+}
+.header--magazine{
+    color:var(--gray-dark);
+    padding-top:20px;
+    padding-left:20px;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin:0 auto;
+}
+.header--title{
+    padding-top:10px;
+    text-align: center;
+    font-size: 5rem;
+    min-width: 280px;
+}
+.header--slogan{
+    text-align: center;
+    font-size: 0.9rem;
+    min-width: 280px;
+}
+main{
+    display: grid;
+    background: url('https://i.imgur.com/gIL4AiK.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "discover        discover         ."
+    "list            list             ."
+    "cards           cards            cards";
+    max-width: 800px;
+    margin:0 auto;
+
+}
+
+.main--discover{ 
+    padding-top:50px;
+    grid-area: discover; 
+    margin-left:calc(50% - 79.5px);
+    font-size:2rem;
+}
+.main--discover h3{
+    border-left:10px solid white;
+    padding-left: 10px;
+}
+.main--discover h3:nth-child(1){
+    color:#A5C5EB;
+}
+.main--discover h3:nth-child(2){
+    color:var(--white);
+}
+.main--list { 
+    grid-area: list; 
+    max-width: 800px;
+    margin:15px auto 85px auto;
+}
+.main--list ul{
+    list-style:none;
+    background: rgba(0, 0, 0, 0.5); 
+    margin-left:calc(50% - 80px);
+}
+.main--list ul li{
+    padding-top:8px;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    color:var(--gray);
+    font-weight: bold;
+}
+.main--list ul li:nth-child(2){
+    padding-bottom: 8px;
+}
+
+
+.main--cards { 
+    grid-area: cards; 
+    min-width: 300px; /*Pixelaje min en celulares*/
+    padding: 0 10px; /*20px de arriba/abajo y 10px de los lados*/
+}
+.main--cards .card{
+    max-width: 300px;
+    display:flex;
+    margin:15px auto 15px auto;
+
+}
+.main--cards .card h4{
+    font-size: 2rem;
+    font-weight: bold;
+    justify-self: center;
+    text-align: center;
+}
+.card h4:not(.white){
+    color:black;
+}
+.card .white{
+    color:var(--white);
+}
+.main--cards .card h5{
+    font-size: 1rem;
+    font-weight:bolder;
+    justify-self: center;
+    align-self: center;
+    padding-left:2rem;
+    color:#6396C6;
+}
+
+
+footer { 
+    background-color: var(--black);
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+}
+footer p{
+    color:white;
+}
+
+
